@@ -226,5 +226,5 @@ composer test:security
 **Последнее обновление:** 16 октября 2025  
 **Версия:** 2.0.0
 
-[English](SECURITY.en.md) | [Deutsch](SECURITY.de.md) | [Français](SECURITY.fr.md)
+[English](langs/en/SECURITY.md) | [Deutsch](langs/de/SECURITY.md) | [Français](langs/fr/SECURITY.md)
 

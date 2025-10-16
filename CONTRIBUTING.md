@@ -269,4 +269,4 @@ composer compile
 
 **Последнее обновление:** 16 октября 2025
 
-[English](CONTRIBUTING.en.md) | [Deutsch](CONTRIBUTING.de.md) | [Français](CONTRIBUTING.fr.md)
+[English](langs/en/CONTRIBUTING.md) | [Deutsch](langs/de/CONTRIBUTING.md) | [Français](langs/fr/CONTRIBUTING.md)

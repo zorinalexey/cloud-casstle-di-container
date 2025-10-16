@@ -174,4 +174,4 @@
 
 **Последнее обновление:** 16 октября 2025
 
-[English](SUPPORT.en.md) | [Deutsch](SUPPORT.de.md) | [Français](SUPPORT.fr.md)
+[English](langs/en/SUPPORT.md) | [Deutsch](langs/de/SUPPORT.md) | [Français](langs/fr/SUPPORT.md)

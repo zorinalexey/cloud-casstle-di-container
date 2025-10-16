@@ -50,4 +50,4 @@
 
 **Последнее обновление:** 16 октября 2025
 
-[English](CODE_OF_CONDUCT.en.md) | [Deutsch](CODE_OF_CONDUCT.de.md) | [Français](CODE_OF_CONDUCT.fr.md)
+[English](langs/en/CODE_OF_CONDUCT.md) | [Deutsch](langs/de/CODE_OF_CONDUCT.md) | [Français](langs/fr/CODE_OF_CONDUCT.md)

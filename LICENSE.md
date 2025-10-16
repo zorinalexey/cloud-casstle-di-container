@@ -113,4 +113,4 @@ MIT License совместима с большинством лицензий:
 
 **Последнее обновление:** 16 октября 2025
 
-[English](LICENSE.en.md) | [Deutsch](LICENSE.de.md) | [Français](LICENSE.fr.md)
+[English](langs/en/LICENSE.md) | [Deutsch](langs/de/LICENSE.md) | [Français](langs/fr/LICENSE.md)

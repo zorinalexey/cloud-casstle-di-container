@@ -83,3 +83,5 @@
 ---
 
 **Присоединяйтесь к сообществу CloudCastle DI!** ✨
+
+[English](langs/en/CONTACTS.md) | [Deutsch](langs/de/CONTACTS.md) | [Français](langs/fr/CONTACTS.md)

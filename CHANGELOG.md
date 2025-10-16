@@ -88,3 +88,5 @@
 ---
 
 **Последнее обновление:** 16 октября 2025
+
+[English](langs/en/CHANGELOG.md) | [Deutsch](langs/de/CHANGELOG.md) | [Français](langs/fr/CHANGELOG.md)

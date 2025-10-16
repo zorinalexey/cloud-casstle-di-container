@@ -183,4 +183,4 @@
 
 **Последнее обновление:** 16 октября 2025
 
-[English](ROADMAP.en.md) | [Deutsch](ROADMAP.de.md) | [Français](ROADMAP.fr.md)
+[English](langs/en/ROADMAP.md) | [Deutsch](langs/de/ROADMAP.md) | [Français](langs/fr/ROADMAP.md)

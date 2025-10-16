@@ -1,6 +1,6 @@
 # CloudCastle DI Container
 
-[English](README.en.md) | [Deutsch](README.de.md) | [Français](README.fr.md)
+[English](langs/en/README.md) | [Deutsch](langs/de/README.md) | [Français](langs/fr/README.md)
 
 Мощный и гибкий Dependency Injection контейнер для PHP 8.1+ с поддержкой **autowiring** и **advanced features**.
 

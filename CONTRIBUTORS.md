@@ -194,4 +194,4 @@
 
 **Последнее обновление:** 16 октября 2025
 
-[English](CONTRIBUTORS.en.md) | [Deutsch](CONTRIBUTORS.de.md) | [Français](CONTRIBUTORS.fr.md)
+[English](langs/en/CONTRIBUTORS.md) | [Deutsch](langs/de/CONTRIBUTORS.md) | [Français](langs/fr/CONTRIBUTORS.md)
