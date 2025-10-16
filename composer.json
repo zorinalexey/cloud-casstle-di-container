@@ -45,6 +45,7 @@
     "scripts": {
         "test": "phpunit",
         "test:coverage": "phpunit --coverage-html coverage --coverage-text",
+        "test:security": "phpunit tests/SecurityTest.php --testdox",
         "analyse": [
             "@phpstan",
             "@phpcs"
