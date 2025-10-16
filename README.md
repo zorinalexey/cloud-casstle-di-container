@@ -258,3 +258,32 @@ composer fix
 
 MIT License
 
+
+---
+
+## 📖 Документация
+
+Полная документация доступна на 4 языках:
+
+- 🇷🇺 [Русский](documentation/ru/README.md)
+- 🇬🇧 [English](documentation/en/README.md)
+- 🇩🇪 [Deutsch](documentation/de/README.md)
+- 🇫🇷 [Français](documentation/fr/README.md)
+
+## 📊 Отчёты по тестированию
+
+Подробные отчёты доступны на 4 языках:
+
+- 🇷🇺 [Русский](reports/ru/README.md)
+- 🇬🇧 [English](reports/en/README.md)
+- 🇩🇪 [Deutsch](reports/de/README.md)
+- 🇫🇷 [Français](reports/fr/README.md)
+
+## 💡 Примеры
+
+Примеры использования на 4 языках:
+
+- 🇷🇺 [Русский](examples/ru/)
+- 🇬🇧 [English](examples/en/)
+- 🇩🇪 [Deutsch](examples/de/)
+- 🇫🇷 [Français](examples/fr/)
