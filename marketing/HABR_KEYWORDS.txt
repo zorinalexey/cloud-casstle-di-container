@@ -1,0 +1,17 @@
+КЛЮЧЕВЫЕ СЛОВА ДЛЯ HABR:
+
+Скопируйте и вставьте в поле "Ключевые слова" на Habr:
+
+php, dependency injection, di container, autowiring, php8, performance, benchmark, psr-11, compiled container, lazy loading, attributes, symfony, laravel, open source, тестирование, производительность, memory management, микросервисы, enterprise
+
+ХАБЫ (выбрать 3-5):
+
+1. PHP (обязательно)
+2. Открытый код (обязательно)
+3. Производительность (обязательно)
+4. Разработка веб-сайтов
+5. Программирование
+
+КАТЕГОРИЯ:
+
+Разработка (Development)
