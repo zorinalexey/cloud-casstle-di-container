@@ -12,7 +12,22 @@
     "authors": [
         {
             "name": "Zorin Alexey",
-            "email": "zorinalexey59292@gmail.com"
+            "email": "zorinalexey59292@gmail.com",
+            "homepage": "https://t.me/CloudCastle85",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "zorinalexey59292@gmail.com",
+        "issues": "https://github.com/zorinalexey/cloud-casstle-di-container/issues",
+        "source": "https://github.com/zorinalexey/cloud-casstle-di-container",
+        "docs": "https://github.com/zorinalexey/cloud-casstle-di-container/tree/main/documentation",
+        "chat": "https://t.me/cloud_castle_news"
+    },
+    "funding": [
+        {
+            "type": "other",
+            "url": "https://vk.com/leha_zorin"
         }
     ],
     "require": {
