@@ -37,9 +37,17 @@ A powerful and flexible Dependency Injection container for PHP 8.1+ with **autow
 - 📦 **Compiled Tags** — pre-computed tag mappings in compiled container
 - 💪 **WeakMap Optimization** — zero memory leaks for lazy loading
 
----
+## 📊 Roadmap
 
-## 📦 Installation
+Check out our [roadmap](ROADMAP.en.md) to learn about the project development plans for 2025-2027.
+
+**Upcoming plans:**
+- **v2.1.0** (March 2026) — Performance Boost with Memory Pool and Smart Caching
+- **v2.2.0** (June 2026) — Stability & Bug Fixes with API improvements
+- **v3.0.0** (September 2026) — Next Generation with PHP 8.5 support
+- **v3.1.0** (December 2026) — Framework Integration (Symfony, Laravel, Slim)
+
+---
 
 ```bash
 composer require cloud-castle/di-container

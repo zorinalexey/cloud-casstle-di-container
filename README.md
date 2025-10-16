@@ -38,9 +38,17 @@
 - 📦 **Compiled Tags** — pre-computed tag mappings в compiled container
 - 💪 **WeakMap Optimization** — zero memory leaks для lazy loading
 
----
+## 📊 Дорожная карта
 
-## 📦 Установка
+Ознакомьтесь с нашей [дорожной картой](ROADMAP.md), чтобы узнать о планах развития проекта на 2025-2027 годы.
+
+**Ближайшие планы:**
+- **v2.1.0** (Март 2026) — Performance Boost с Memory Pool и Smart Caching
+- **v2.2.0** (Июнь 2026) — Stability & Bug Fixes с улучшениями API
+- **v3.0.0** (Сентябрь 2026) — Next Generation с поддержкой PHP 8.5
+- **v3.1.0** (Декабрь 2026) — Framework Integration (Symfony, Laravel, Slim)
+
+---
 
 ```bash
 composer require cloud-castle/di-container

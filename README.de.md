@@ -31,9 +31,17 @@ Ein leistungsstarker und flexibler Dependency Injection Container für PHP 8.1+ 
 - 🔄 **Scoped Containers** — Lebenszyklus-Management
 - ⚡ **Async Initialization** — Batch-Loading
 
----
+## 📊 Roadmap
 
-## 📦 Installation
+Schauen Sie sich unsere [Roadmap](ROADMAP.de.md) an, um die Projektentwicklungspläne für 2025-2027 zu erfahren.
+
+**Kommende Pläne:**
+- **v2.1.0** (März 2026) — Performance Boost mit Memory Pool und Smart Caching
+- **v2.2.0** (Juni 2026) — Stability & Bug Fixes mit API-Verbesserungen
+- **v3.0.0** (September 2026) — Next Generation mit PHP 8.5 Unterstützung
+- **v3.1.0** (Dezember 2026) — Framework Integration (Symfony, Laravel, Slim)
+
+---
 
 ```bash
 composer require cloud-castle/di-container
