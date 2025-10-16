@@ -11,8 +11,26 @@
 ### 1. [Summary](01_SUMMARY.md)
 Overall test results, key metrics, status.
 
-### 2. [Comparison with Competitors](07_COMPARISON.md)
+### 2. [Unit Tests](02_UNIT_TESTS.md)
+PHPUnit test results.
+
+### 3. [Performance Benchmarks](03_BENCHMARKS.md)
+Detailed performance measurements.
+
+### 4. [Load Testing](04_LOAD_TESTS.md)
+Tests under high load.
+
+### 5. [Stress Testing](05_STRESS_TESTS.md)
+Tests under extreme conditions.
+
+### 6. [Compiled Container](06_COMPILED_CONTAINER.md)
+Compiled container performance.
+
+### 7. [Comparison with Competitors](07_COMPARISON.md)
 Detailed comparison with Symfony, Laravel, PHP-DI, Pimple, Laminas.
+
+### 8. [Security Tests](08_SECURITY.md) 🔒 🆕
+Comprehensive security testing, OWASP Top 10, security comparison with competitors.
 
 ---
 

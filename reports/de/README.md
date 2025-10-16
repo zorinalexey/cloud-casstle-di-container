@@ -12,6 +12,26 @@
 - **Max. Services:** 1.746.358
 - **Operationen/Sek:** bis zu 500.133
 - **Speicherlecks:** 0,001 MB pro 15M Zyklen
+### 2. [Unit-Tests](02_UNIT_TESTS.md)
+PHPUnit-Testergebnisse.
+
+### 3. [Leistungs-Benchmarks](03_BENCHMARKS.md)
+Detaillierte Leistungsmessungen.
+
+### 4. [Lasttests](04_LOAD_TESTS.md)
+Tests unter hoher Last.
+
+### 5. [Stresstests](05_STRESS_TESTS.md)
+Tests unter extremen Bedingungen.
+
+### 6. [Kompilierter Container](06_COMPILED_CONTAINER.md)
+Leistung des kompilierten Containers.
+
+### 7. [Wettbewerbervergleich](07_COMPARISON.md)
+Detaillierter Vergleich mit Symfony, Laravel, PHP-DI, Pimple, Laminas.
+
+### 8. [Sicherheitstests](08_SECURITY.md) 🔒 🆕
+Umfassende Sicherheitstests, OWASP Top 10, Sicherheitsvergleich mit Wettbewerbern.
 - **Bewertung:** 🥇 #1 unter PHP DI-Containern
 
 ---
