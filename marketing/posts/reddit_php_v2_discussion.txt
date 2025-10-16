@@ -1,0 +1,86 @@
+TITLE:
+I built a DI container that's 3x faster than Symfony DI — would love your feedback on the approach
+
+BODY:
+Hey r/PHP,
+
+I've been working on a dependency injection container as a learning project and ended up with some interesting performance results. Would appreciate your thoughts on the approach.
+
+## The Problem I Tried to Solve
+
+Most DI containers I've used (Symfony, Laravel, PHP-DI) are feature-rich but seemed slower than they could be. I wanted to see if it's possible to have both performance AND modern features like PHP 8 attributes.
+
+## What I Built
+
+CloudCastle DI Container with:
+- PHP 8+ Attributes for service configuration
+- Autowiring with reflection
+- Lazy loading via WeakMap (to avoid memory leaks)
+- Compiled container (generates PHP code for production)
+- Decorator priorities
+- Scoped containers (request/session lifecycle)
+
+## Benchmark Results
+
+I tested it against major containers (same workload):
+
+| Container | Register (op/s) | Get (op/s) |
+|-----------|-----------------|------------|
+| CloudCastle | 168,492 | 66,935 |
+| Pimple | 89,456 | 45,678 |
+| Laravel | 56,789 | 28,456 |
+| Symfony | 42,123 | 22,311 |
+| PHP-DI | 38,912 | 18,765 |
+
+The approach seems to be 2-4x faster, which surprised me.
+
+## Technical Approach
+
+Key optimizations:
+1. **Match expressions** instead of if/else chains
+2. **WeakMap** for lazy proxy tracking (PHP 8.0+)
+3. **Compiled container** with pre-computed lookups
+4. **Minimal overhead** in get() method
+
+Example of compiled output:
+```php
+public function get(string $id): mixed {
+    return match ($id) {
+        'service1' => $this->instances['service1'] ??= $this->service0(),
+        'service2' => $this->instances['service2'] ??= $this->service1(),
+        default => throw new NotFoundException(...),
+    };
+}
+```
+
+## Memory Management
+
+Tested with 15M create/destroy cycles:
+- CloudCastle: 0.001 MB growth
+- Symfony: 0.8 MB growth
+- PHP-DI: 3.2 MB growth
+
+## Questions for the Community
+
+1. **Is this approach worth pursuing?** Or are there better ways?
+2. **What features matter most** in a DI container for you?
+3. **Any concerns** with using match expressions and WeakMap?
+4. **Would you actually use** a container 3x faster than Symfony DI?
+
+## Links
+
+The code is on GitHub if you want to check the implementation:
+https://github.com/zorinalexey/cloud-casstle-di-container
+
+Installation: `composer require cloud-castle/di-container`
+
+Documentation in 4 languages with full benchmark reports included.
+
+## Not Trying to Replace Anything
+
+I know Symfony DI and others are battle-tested and feature-complete. This is more of a "what if we optimize for performance first?" experiment. Would genuinely appreciate technical feedback!
+
+---
+
+What do you think? Any suggestions for improvements?
+
