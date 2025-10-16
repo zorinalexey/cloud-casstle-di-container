@@ -1,177 +1,177 @@
-# 🆘 Support
+# 🆘 Поддержка
 
-Need help with CloudCastle DI Container? We're here to assist you!
-
----
-
-## 📚 Documentation
-
-### 📖 Getting Started
-- **[Quick Start Guide](documentation/ru/01_QUICK_START.md)** — Start using CloudCastle DI in minutes
-- **[Basic Usage](documentation/ru/02_BASIC_USAGE.md)** — Learn the fundamentals
-- **[Advanced Features](documentation/ru/03_ADVANCED_FEATURES.md)** — Master advanced capabilities
-- **[API Reference](documentation/ru/05_API.md)** — Complete API documentation
-
-### 🌍 Multilingual Documentation
-- **[English](documentation/en/README.md)** — English documentation
-- **[Deutsch](documentation/de/README.md)** — German documentation  
-- **[Français](documentation/fr/README.md)** — French documentation
+Нужна помощь с CloudCastle DI Container? Мы здесь, чтобы помочь вам!
 
 ---
 
-## 🐛 Bug Reports & Issues
+## 📚 Документация
 
-### 🚨 Found a Bug?
-1. **Check existing issues** — Search [GitHub Issues](https://github.com/zorinalexey/cloud-casstle-di-container/issues)
-2. **Create a new issue** — Provide detailed information:
-   - PHP version
-   - CloudCastle DI version
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Error logs (if any)
+### 📖 Быстрый старт
+- **[Руководство по быстрому старту](documentation/ru/01_QUICK_START.md)** — Начните использовать CloudCastle DI за минуты
+- **[Базовое использование](documentation/ru/02_BASIC_USAGE.md)** — Изучите основы
+- **[Продвинутые возможности](documentation/ru/03_ADVANCED_FEATURES.md)** — Освойте расширенные возможности
+- **[Справочник API](documentation/ru/05_API.md)** — Полная документация API
 
-### 📝 Issue Templates
-When creating an issue, please use our templates:
-- **Bug Report** — For reporting bugs
-- **Feature Request** — For suggesting new features
-- **Question** — For asking questions
+### 🌍 Многоязычная документация
+- **[English](documentation/en/README.md)** — Английская документация
+- **[Deutsch](documentation/de/README.md)** — Немецкая документация  
+- **[Français](documentation/fr/README.md)** — Французская документация
 
 ---
 
-## 💬 Community Support
+## 🐛 Сообщения об ошибках и Issues
+
+### 🚨 Нашли ошибку?
+1. **Проверьте существующие issues** — Поищите в [GitHub Issues](https://github.com/zorinalexey/cloud-casstle-di-container/issues)
+2. **Создайте новый issue** — Предоставьте подробную информацию:
+   - Версия PHP
+   - Версия CloudCastle DI
+   - Шаги для воспроизведения
+   - Ожидаемое vs фактическое поведение
+   - Логи ошибок (если есть)
+
+### 📝 Шаблоны Issues
+При создании issue используйте наши шаблоны:
+- **Bug Report** — Для сообщения об ошибках
+- **Feature Request** — Для предложения новых функций
+- **Question** — Для задавания вопросов
+
+---
+
+## 💬 Поддержка сообщества
 
 ### 💬 Telegram
-- **Personal Contact:** [@CloudCastle85](https://t.me/CloudCastle85) — Direct support
-- **News Channel:** [@cloud_castle_news](https://t.me/cloud_castle_news) — Updates and discussions
+- **Личный контакт:** [@CloudCastle85](https://t.me/CloudCastle85) — Прямая поддержка
+- **Новостной канал:** [@cloud_castle_news](https://t.me/cloud_castle_news) — Обновления и обсуждения
 
-### 📧 Email Support
-- **General Questions:** zorinalexey59292@gmail.com
-- **Security Issues:** zorinalexey59292@gmail.com (Subject: `[SECURITY]`)
-- **Business Inquiries:** zorinalexey59292@gmail.com (Subject: `[BUSINESS]`)
+### 📧 Поддержка по Email
+- **Общие вопросы:** zorinalexey59292@gmail.com
+- **Проблемы безопасности:** zorinalexey59292@gmail.com (Тема: `[SECURITY]`)
+- **Деловые запросы:** zorinalexey59292@gmail.com (Тема: `[BUSINESS]`)
 
 ### 🐙 GitHub
-- **Issues:** [Create an issue](https://github.com/zorinalexey/cloud-casstle-di-container/issues)
+- **Issues:** [Создать issue](https://github.com/zorinalexey/cloud-casstle-di-container/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/zorinalexey/cloud-casstle-di-container/discussions)
 - **Security:** [Security Advisories](https://github.com/zorinalexey/cloud-casstle-di-container/security)
 
 ---
 
-## ❓ Frequently Asked Questions
+## ❓ Часто задаваемые вопросы
 
-### 🔧 Installation Issues
-**Q: Composer installation fails**
-A: Ensure you have PHP 8.1+ and Composer 2.0+. Try `composer clear-cache` and reinstall.
+### 🔧 Проблемы с установкой
+**В: Установка Composer не удается**
+О: Убедитесь, что у вас PHP 8.1+ и Composer 2.0+. Попробуйте `composer clear-cache` и переустановите.
 
-**Q: Autoloader not found**
-A: Run `composer dump-autoload` to regenerate the autoloader.
+**В: Автозагрузчик не найден**
+О: Запустите `composer dump-autoload` для перегенерации автозагрузчика.
 
-### ⚡ Performance Questions
-**Q: How to improve performance?**
-A: Use compiled container mode: `composer compile` and load the compiled version.
+### ⚡ Вопросы производительности
+**В: Как улучшить производительность?**
+О: Используйте режим скомпилированного контейнера: `composer compile` и загрузите скомпилированную версию.
 
-**Q: Memory usage is high**
-A: Enable lazy loading for heavy services and use WeakMap optimization.
+**В: Высокое использование памяти**
+О: Включите ленивую загрузку для тяжелых сервисов и используйте оптимизацию WeakMap.
 
-### 🛡️ Security Questions
-**Q: Is it safe for production?**
-A: Yes! We have A+ security rating with 15/15 security tests passed.
+### 🛡️ Вопросы безопасности
+**В: Безопасно ли для продакшена?**
+О: Да! У нас рейтинг безопасности A+ с 15/15 пройденными тестами безопасности.
 
-**Q: How to report security issues?**
-A: Email zorinalexey59292@gmail.com with subject `[SECURITY]` or use GitHub Security Advisories.
-
----
-
-## 🎯 Response Times
-
-### 📧 Email Support
-- **General Questions:** 24-48 hours
-- **Bug Reports:** 24-72 hours
-- **Security Issues:** 2-24 hours
-- **Business Inquiries:** 48-96 hours
-
-### 💬 Telegram Support
-- **Personal Messages:** 1-4 hours
-- **Channel Questions:** Real-time updates
-- **Weekends:** 4-8 hours
-
-### 🐙 GitHub Support
-- **Issues:** 24-72 hours
-- **Pull Requests:** 48-96 hours
-- **Security Issues:** 2-24 hours
+**В: Как сообщить о проблемах безопасности?**
+О: Email zorinalexey59292@gmail.com с темой `[SECURITY]` или используйте GitHub Security Advisories.
 
 ---
 
-## 🌍 Language Support
+## 🎯 Время ответа
 
-### ✅ Full Support
-- **Русский** — Primary language
-- **English** — Complete support
-- **Deutsch** — Complete support
-- **Français** — Complete support
+### 📧 Поддержка по Email
+- **Общие вопросы:** 24-48 часов
+- **Сообщения об ошибках:** 24-72 часа
+- **Проблемы безопасности:** 2-24 часа
+- **Деловые запросы:** 48-96 часов
 
-### 📝 Partial Support
-- **Español** — On request
-- **Italiano** — On request
-- **Português** — On request
+### 💬 Поддержка Telegram
+- **Личные сообщения:** 1-4 часа
+- **Вопросы в канале:** Обновления в реальном времени
+- **Выходные:** 4-8 часов
 
----
-
-## 🏆 Contributing to Support
-
-### 🤝 How You Can Help
-- **Answer questions** in GitHub Discussions
-- **Improve documentation** with pull requests
-- **Share your experience** in Telegram channel
-- **Report bugs** you encounter
-- **Suggest improvements** for better support
-
-### 🎁 Recognition
-- **Public acknowledgment** in CONTRIBUTORS.md
-- **Special badges** for active supporters
-- **Community access** to exclusive content
+### 🐙 Поддержка GitHub
+- **Issues:** 24-72 часа
+- **Pull Requests:** 48-96 часов
+- **Проблемы безопасности:** 2-24 часа
 
 ---
 
-## 📞 Emergency Support
+## 🌍 Поддержка языков
 
-### 🚨 Critical Issues
-For critical production issues:
-- **Email:** zorinalexey59292@gmail.com (Subject: `[URGENT]`)
+### ✅ Полная поддержка
+- **Русский** — Основной язык
+- **English** — Полная поддержка
+- **Deutsch** — Полная поддержка
+- **Français** — Полная поддержка
+
+### 📝 Частичная поддержка
+- **Español** — По запросу
+- **Italiano** — По запросу
+- **Português** — По запросу
+
+---
+
+## 🏆 Вклад в поддержку
+
+### 🤝 Как вы можете помочь
+- **Отвечать на вопросы** в GitHub Discussions
+- **Улучшать документацию** с помощью pull requests
+- **Делиться опытом** в Telegram канале
+- **Сообщать об ошибках**, с которыми сталкиваетесь
+- **Предлагать улучшения** для лучшей поддержки
+
+### 🎁 Признание
+- **Публичное признание** в CONTRIBUTORS.md
+- **Специальные бейджи** для активных помощников
+- **Доступ к сообществу** к эксклюзивному контенту
+
+---
+
+## 📞 Экстренная поддержка
+
+### 🚨 Критические проблемы
+Для критических проблем продакшена:
+- **Email:** zorinalexey59292@gmail.com (Тема: `[URGENT]`)
 - **Telegram:** [@CloudCastle85](https://t.me/CloudCastle85)
-- **Response Time:** 1-4 hours
+- **Время ответа:** 1-4 часа
 
-### 🛡️ Security Emergencies
-For security vulnerabilities:
-- **Email:** zorinalexey59292@gmail.com (Subject: `[SECURITY URGENT]`)
+### 🛡️ Экстренные ситуации безопасности
+Для уязвимостей безопасности:
+- **Email:** zorinalexey59292@gmail.com (Тема: `[SECURITY URGENT]`)
 - **GitHub Security:** [Security Advisories](https://github.com/zorinalexey/cloud-casstle-di-container/security)
-- **Response Time:** 1-2 hours
+- **Время ответа:** 1-2 часа
 
 ---
 
-## 📊 Support Statistics
+## 📊 Статистика поддержки
 
-### 📈 Current Performance
-- **Average Response Time:** 12 hours
-- **Issue Resolution Rate:** 95%
-- **User Satisfaction:** 4.8/5
-- **Active Supporters:** 5+
+### 📈 Текущая производительность
+- **Среднее время ответа:** 12 часов
+- **Процент решения issues:** 95%
+- **Удовлетворенность пользователей:** 4.8/5
+- **Активные помощники:** 5+
 
-### 🎯 Goals for 2026
-- **Response Time:** < 6 hours
-- **Resolution Rate:** 98%
-- **User Satisfaction:** 4.9/5
-- **Active Supporters:** 50+
-
----
-
-## 🙏 Thank You
-
-Thank you for using CloudCastle DI Container!
-
-Your questions and feedback help us improve the project for everyone.
+### 🎯 Цели на 2026
+- **Время ответа:** < 6 часов
+- **Процент решения:** 98%
+- **Удовлетворенность пользователей:** 4.9/5
+- **Активные помощники:** 50+
 
 ---
 
-**Last Updated:** October 16, 2025
+## 🙏 Спасибо
 
-[Русский](SUPPORT.md) | [English](SUPPORT.en.md) | [Deutsch](SUPPORT.de.md) | [Français](SUPPORT.fr.md)
+Спасибо за использование CloudCastle DI Container!
+
+Ваши вопросы и отзывы помогают нам улучшить проект для всех.
+
+---
+
+**Последнее обновление:** 16 октября 2025
+
+[English](SUPPORT.en.md) | [Deutsch](SUPPORT.de.md) | [Français](SUPPORT.fr.md)

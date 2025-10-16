@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use Rector\Config\RectorConfig;
 use Rector\Set\ValueObject\LevelSetList;
@@ -17,7 +17,7 @@ return RectorConfig::configure()
         __DIR__ . '/build',
         __DIR__ . '/coverage',
     ])
-    ->withPhpSets(php81: true)
+    ->withPhpSets(php81 : true)
     ->withSets([
         LevelSetList::UP_TO_PHP_81,
         SetList::CODE_QUALITY,
@@ -31,12 +31,12 @@ return RectorConfig::configure()
         AddVoidReturnTypeWhereNoReturnRector::class,
     ])
     ->withPreparedSets(
-        deadCode: true,
-        codeQuality: true,
-        codingStyle: true,
-        typeDeclarations: true,
-        privatization: true,
-        earlyReturn: true,
-        strictBooleans: true
+        deadCode : true,
+        codeQuality : true,
+        codingStyle : true,
+        typeDeclarations : true,
+        privatization : true,
+        earlyReturn : true,
+        strictBooleans : true
     );
 

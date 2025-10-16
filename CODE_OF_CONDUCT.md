@@ -1,53 +1,53 @@
-# 📋 Code of Conduct
+# 📋 Кодекс поведения
 
-## 🤝 Our Pledge
+## 🤝 Наше обязательство
 
-We are committed to providing a welcoming and inspiring community for all. We pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Мы обязуемся предоставить приветливое и вдохновляющее сообщество для всех. Мы обещаем сделать участие в нашем проекте и нашем сообществе свободным от домогательств опытом для всех, независимо от возраста, размера тела, инвалидности, этнической принадлежности, гендерной идентичности и самовыражения, уровня опыта, национальности, внешнего вида, расы, религии или сексуальной идентичности и ориентации.
 
-## 📏 Our Standards
+## 📏 Наши стандарты
 
-### ✅ Examples of behavior that contributes to creating a positive environment include:
+### ✅ Примеры поведения, способствующего созданию позитивной среды:
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
+- Использование приветливого и инклюзивного языка
+- Уважение к различным точкам зрения и опыту
+- Грациозное принятие конструктивной критики
+- Фокус на том, что лучше всего для сообщества
+- Проявление эмпатии к другим членам сообщества
 
-### ❌ Examples of unacceptable behavior include:
+### ❌ Примеры неприемлемого поведения:
 
-- The use of sexualized language or imagery and unwelcome sexual attention or advances
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others' private information without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a professional setting
+- Использование сексуализированного языка или образов и нежелательное сексуальное внимание или домогательства
+- Троллинг, оскорбительные/уничижительные комментарии и личные или политические атаки
+- Публичное или частное преследование
+- Публикация частной информации других без явного разрешения
+- Другое поведение, которое может разумно считаться неуместным в профессиональной среде
 
-## 🛡️ Our Responsibilities
+## 🛡️ Наши обязанности
 
-Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+Мейнтейнеры проекта несут ответственность за разъяснение стандартов приемлемого поведения и ожидается, что они предпримут соответствующие и справедливые корректирующие действия в ответ на любые случаи неприемлемого поведения.
 
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned with this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+Мейнтейнеры проекта имеют право и обязанность удалять, редактировать или отклонять комментарии, коммиты, код, правки вики, issues и другие вклады, которые не соответствуют этому Кодексу поведения, или временно или постоянно заблокировать любого участника за другое поведение, которое они считают неуместным, угрожающим, оскорбительным или вредным.
 
-## 🌍 Scope
+## 🌍 Область применения
 
-This Code of Conduct applies within all project spaces, and also applies when an individual is representing the project or its community in public spaces. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+Этот Кодекс поведения применяется во всех пространствах проекта, а также применяется, когда человек представляет проект или его сообщество в публичных пространствах. Примеры представления проекта или сообщества включают использование официального адреса электронной почты проекта, публикацию через официальную учетную запись в социальных сетях или выступление в качестве назначенного представителя на онлайн или офлайн мероприятии.
 
-## 📞 Enforcement
+## 📞 Применение
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at **zorinalexey59292@gmail.com**. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
+Случаи оскорбительного, преследующего или иного неприемлемого поведения могут быть сообщены, связавшись с командой проекта по адресу **zorinalexey59292@gmail.com**. Все жалобы будут рассмотрены и расследованы, и это приведет к ответу, который считается необходимым и подходящим к обстоятельствам.
 
-The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+Команда проекта обязана сохранять конфиденциальность в отношении репортера инцидента. Дополнительные детали конкретных политик применения могут быть опубликованы отдельно.
 
-## 📚 Attribution
+## 📚 Атрибуция
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+Этот Кодекс поведения адаптирован из [Contributor Covenant](https://www.contributor-covenant.org), версия 2.0, доступна по адресу https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
-Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
+Руководящие принципы воздействия на сообщество были вдохновлены [лестницей применения кодекса поведения Mozilla](https://github.com/mozilla/diversity).
 
-For answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations.
+Для ответов на общие вопросы об этом кодексе поведения см. FAQ по адресу https://www.contributor-covenant.org/faq. Переводы доступны по адресу https://www.contributor-covenant.org/translations.
 
 ---
 
-**Last Updated:** October 16, 2025
+**Последнее обновление:** 16 октября 2025
 
-[Русский](CODE_OF_CONDUCT.md) | [English](CODE_OF_CONDUCT.en.md) | [Deutsch](CODE_OF_CONDUCT.de.md) | [Français](CODE_OF_CONDUCT.fr.md)
+[English](CODE_OF_CONDUCT.en.md) | [Deutsch](CODE_OF_CONDUCT.de.md) | [Français](CODE_OF_CONDUCT.fr.md)
