@@ -2,6 +2,10 @@
 /vendor/
 composer.lock
 
+# Compiled Container
+/cache/
+!/cache/services.php.example
+
 # PHPUnit
 /.phpunit.cache/
 /coverage/

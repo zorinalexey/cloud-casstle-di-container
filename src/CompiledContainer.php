@@ -21,6 +21,21 @@ abstract class CompiledContainer implements ContainerInterface
     protected array $instances = [];
 
     /**
+     * @var array<string, callable> Service factories
+     */
+    protected array $services = [];
+
+    /**
+     * Constructor.
+     *
+     * @param array<string, callable> $services Service factories
+     */
+    public function __construct(array $services = [])
+    {
+        $this->services = $services;
+    }
+
+    /**
      * {@inheritDoc}
      */
     abstract public function has(string $serviceId): bool;
