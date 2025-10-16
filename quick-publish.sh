@@ -47,10 +47,10 @@ case "$PLATFORM" in
         ;;
         
     habr)
-        echo "📱 Публикация на Habr"
+        echo "📱 Публикация на Habr (Песочница)"
         echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
         echo ""
-        xdg-open "https://habr.com/ru/articles/new/" 2>/dev/null &
+        xdg-open "https://habr.com/ru/sandbox/new/" 2>/dev/null &
         sleep 2
         echo ""
         echo "📝 Статья готова в: marketing/posts/habr_article.md"
@@ -104,7 +104,7 @@ case "$PLATFORM" in
         echo "Открываем все площадки..."
         xdg-open "https://reddit.com/r/PHP/submit" 2>/dev/null &
         sleep 1
-        xdg-open "https://habr.com/ru/articles/new/" 2>/dev/null &
+        xdg-open "https://habr.com/ru/sandbox/new/" 2>/dev/null &
         sleep 1
         xdg-open "https://dev.to/new" 2>/dev/null &
         echo ""
