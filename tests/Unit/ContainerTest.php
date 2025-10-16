@@ -343,10 +343,13 @@ class ContainerTest extends TestCase
         $code = $this->container->compile('TestContainer', 'Test\\Namespace');
 
         $this->assertStringContainsString('namespace Test\\Namespace;', $code);
-        $this->assertStringContainsString('class TestContainer extends CompiledContainer', $code);
+        $this->assertStringContainsString('class TestContainer extends \\CloudCastle\\DI\\CompiledContainer', $code);
+        $this->assertStringContainsString('public function __construct()', $code);
         $this->assertStringContainsString('public function has(', $code);
         $this->assertStringContainsString('public function get(', $code);
         $this->assertStringContainsString('public function getServiceIds(', $code);
+        $this->assertStringContainsString('private function service0()', $code);
+        $this->assertStringContainsString('private function service1()', $code);
     }
 
     public function testCompileToFile(): void
