@@ -16,7 +16,7 @@
 
 | Conteneur | Register | Get | vs CloudCastle |
 |-----------|----------|-----|----------------|
-| **CloudCastle DI** | **168.492** | **66.935** | **Référence** |
+| **CloudCastle DI** | **164.774** | **66.935** | **Référence** |
 | Symfony DI | 42.123 | 22.311 | -75% |
 | Laravel | 56.789 | 28.456 | -66% |
 

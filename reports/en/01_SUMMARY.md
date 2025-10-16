@@ -18,7 +18,7 @@
 | **Stress Tests** | 6 | 5 | 0 | 1 | ⚠️ WARNING |
 | **Compiled Load** | 5 | 5 | 0 | 0 | ✅ PASSED |
 | **Compiled Stress** | 5 | 5 | 0 | 0 | ✅ PASSED |
-| **TOTAL** | **64** | **63** | **0** | **1** | ✅ **98.4%** |
+| **TOTAL** | **83** | **82** | **0** | **1** | ✅ **98.8%** |
 
 ---
 
@@ -26,11 +26,11 @@
 
 ### Performance Records
 
-- **✅ 1,746,358 services** — maximum registered services
-- **✅ 15,000,000 operations** — extreme concurrent access (500,133 op/s)
+- **✅ 1,746,359 services** — maximum registered services
+- **✅ 15,000,000 operations** — extreme concurrent access (499,667 op/s)
 - **✅ 15,000 DI levels** — dependency chain depth
 - **✅ 15,000,000 cycles** — no memory leaks (growth: 0.001 MB)
-- **✅ 69,032 exceptions/sec** — exception handling
+- **✅ 69,813 exceptions/sec** — exception handling
 - **✅ 0.478 KB/service** — memory efficiency
 
 ### Performance
@@ -52,7 +52,7 @@
 
 | Container | Register | Get (1st) | Get (cached) | Has |
 |-----------|----------|-----------|--------------|-----|
-| **CloudCastle DI** | **168,492** | **66,935** | **61,145** | **304,132** |
+| **CloudCastle DI** | **164,774** | **67,456** | **61,255** | **297,817** |
 | Symfony DI | 42,123 | 22,311 | 33,445 | 81,033 |
 | Laravel Container | 56,789 | 28,456 | 41,223 | 95,678 |
 | PHP-DI | 38,912 | 18,765 | 29,334 | 72,456 |
@@ -85,7 +85,7 @@
 1. **Unmatched performance** — 2-4x faster than competitors
 2. **Memory efficient** — minimal leaks (0.001 MB per 15M cycles)
 3. **Scalability** — 1.7M+ services, 15M operations
-4. **Stability** — 98.4% tests passed
+4. **Stability** — 98.8% tests passed
 5. **Rich features** — 8 advanced features in v2.0
 
 ### Recommendations

@@ -11,7 +11,7 @@
 
 | Métrique | Valeur |
 |----------|--------|
-| **Maximum** | **1.746.358** |
+| **Maximum** | **1.746.359** |
 | Mémoire/service | 0,478 Ko |
 
 **Statut:** ✅ RÉUSSI
@@ -23,7 +23,7 @@
 | Métrique | Valeur |
 |----------|--------|
 | Opérations | 15.000.000 |
-| **Vitesse** | **500.133 op/s** |
+| **Vitesse** | **499.667 op/s** |
 
 **Statut:** ✅ RÉUSSI
 

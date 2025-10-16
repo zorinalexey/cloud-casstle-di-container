@@ -11,7 +11,7 @@
 
 | Metrik | Wert |
 |--------|------|
-| **Maximum** | **1.746.358** |
+| **Maximum** | **1.746.359** |
 | Speicher/Service | 0,478 KB |
 
 **Status:** ✅ PASSED
@@ -23,7 +23,7 @@
 | Metrik | Wert |
 |--------|------|
 | Operationen | 15.000.000 |
-| **Geschwindigkeit** | **500.133 Op/s** |
+| **Geschwindigkeit** | **499.667 Op/s** |
 
 **Status:** ✅ PASSED
 

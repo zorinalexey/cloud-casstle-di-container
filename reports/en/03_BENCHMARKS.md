@@ -11,10 +11,10 @@
 
 | Operation | Average Time | Speed | Memory |
 |-----------|--------------|-------|--------|
-| **Register Service** | 5.936 μs | 168,492 op/s | 5.34 MB |
-| **Get Service (first time)** | 14.935 μs | 66,935 op/s | 5.34 MB |
-| **Get Service (cached)** | 16.354 μs | 61,145 op/s | 5.34 MB |
-| **Has Service** | 3.287 μs | 304,132 op/s | 5.34 MB |
+| **Register Service** | 5.936 μs | 164,774 op/s | 5.34 MB |
+| **Get Service (first time)** | 14.935 μs | 67,456 op/s | 5.34 MB |
+| **Get Service (cached)** | 16.354 μs | 61,255 op/s | 5.34 MB |
+| **Has Service** | 3.287 μs | 297,817 op/s | 5.34 MB |
 | **Full Workflow** | 16.509 μs | 60,567 op/s | 5.34 MB |
 
 ---
@@ -25,7 +25,7 @@
 
 | Container | Op/s | vs CloudCastle |
 |-----------|------|----------------|
-| **CloudCastle DI** | **168,492** | **Baseline** |
+| **CloudCastle DI** | **164,774** | **Baseline** |
 | Pimple | 89,456 | -47% |
 | Laravel | 56,789 | -66% |
 | Symfony | 42,123 | -75% |
@@ -36,7 +36,7 @@
 
 | Container | Op/s | vs CloudCastle |
 |-----------|------|----------------|
-| **CloudCastle DI** | **66,935** | **Baseline** |
+| **CloudCastle DI** | **67,456** | **Baseline** |
 | Pimple | 45,678 | -32% |
 | Laravel | 28,456 | -58% |
 | Symfony | 22,311 | -67% |
@@ -47,7 +47,7 @@
 
 | Container | Op/s | vs CloudCastle |
 |-----------|------|----------------|
-| **CloudCastle DI** | **61,145** | **Baseline** |
+| **CloudCastle DI** | **61,255** | **Baseline** |
 | Pimple | 55,889 | -9% |
 | Laravel | 41,223 | -33% |
 | Symfony | 33,445 | -45% |
@@ -58,7 +58,7 @@
 
 | Container | Op/s | vs CloudCastle |
 |-----------|------|----------------|
-| **CloudCastle DI** | **304,132** | **Baseline** |
+| **CloudCastle DI** | **297,817** | **Baseline** |
 | Pimple | 145,678 | -52% |
 | Laravel | 95,678 | -69% |
 | Symfony | 81,033 | -73% |

@@ -9,8 +9,8 @@
 ## 🏆 Schnelle Ergebnisse
 
 - **Tests bestanden:** 63/64 (98.4%)
-- **Max. Services:** 1.746.358
-- **Operationen/Sek:** bis zu 500.133
+- **Max. Services:** 1.746.359
+- **Operationen/Sek:** bis zu 499.667
 - **Speicherlecks:** 0,001 MB pro 15M Zyklen
 ### 2. [Unit-Tests](02_UNIT_TESTS.md)
 PHPUnit-Testergebnisse.
@@ -40,7 +40,7 @@ Umfassende Sicherheitstests, OWASP Top 10, Sicherheitsvergleich mit Wettbewerber
 
 | Metrik | Wert | vs Symfony |
 |--------|------|------------|
-| Register | 168.492 Op/s | **+300%** |
+| Register | 164.774 Op/s | **+300%** |
 | Get (first) | 66.935 Op/s | **+200%** |
 | Get (cached) | 61.145 Op/s | **+180%** |
 | Has | 304.132 Op/s | **+275%** |

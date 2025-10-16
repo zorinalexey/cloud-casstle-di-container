@@ -17,14 +17,14 @@
 | **Stress Tests** | 6 | 5 | 0 | 1 | ⚠️ WARNING |
 | **Compiled Load** | 5 | 5 | 0 | 0 | ✅ PASSED |
 | **Compiled Stress** | 5 | 5 | 0 | 0 | ✅ PASSED |
-| **TOTAL** | **64** | **63** | **0** | **1** | ✅ **98,4%** |
+| **TOTAL** | **83** | **82** | **0** | **1** | ✅ **98,8%** |
 
 ---
 
 ## 🏆 Réalisations clés
 
-- **✅ 1.746.358 services** — nombre maximum de services enregistrés
-- **✅ 15.000.000 opérations** — accès simultané extrême (500.133 op/s)
+- **✅ 1.746.359 services** — nombre maximum de services enregistrés
+- **✅ 15.000.000 opérations** — accès simultané extrême (499.667 op/s)
 - **✅ 15.000 niveaux DI** — profondeur de la chaîne de dépendances
 - **✅ 0,001 Mo de croissance mémoire** — pour 15M cycles
 

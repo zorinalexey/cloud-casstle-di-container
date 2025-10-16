@@ -37,8 +37,8 @@ Comprehensive security testing, OWASP Top 10, security comparison with competito
 ## 🏆 Quick Results
 
 - **Tests passed:** 63/64 (98.4%)
-- **Max services:** 1,746,358
-- **Operations/sec:** up to 500,133
+- **Max services:** 1,746,359
+- **Operations/sec:** up to 499,667
 - **Memory leaks:** 0.001 MB per 15M cycles
 - **Rating:** 🥇 #1 among PHP DI containers
 
@@ -48,10 +48,10 @@ Comprehensive security testing, OWASP Top 10, security comparison with competito
 
 | Metric | Value | vs Symfony |
 |--------|-------|------------|
-| Register | 168,492 op/s | **+300%** |
-| Get (first) | 66,935 op/s | **+200%** |
-| Get (cached) | 61,145 op/s | **+180%** |
-| Has | 304,132 op/s | **+275%** |
+| Register | 164,774 op/s | **+300%** |
+| Get (first) | 67,456 op/s | **+200%** |
+| Get (cached) | 61,255 op/s | **+180%** |
+| Has | 297,817 op/s | **+275%** |
 | Memory/service | 0.478 KB | **-40%** |
 
 ---

@@ -14,7 +14,7 @@
 
 | Metric | Value |
 |--------|-------|
-| **Maximum services** | **1,746,358** |
+| **Maximum services** | **1,746,359** |
 | Time | 8,189.37 ms |
 | Memory | 815.47 MB |
 | Memory per service | 0.478 KB |
@@ -31,7 +31,7 @@
 |--------|-------|
 | Operations executed | 15,000,000 |
 | Time | 29,992.04 ms |
-| **Speed** | **500,133 op/s** |
+| **Speed** | **499,667 op/s** |
 | Errors | 0 |
 
 **Status:** ✅ PASSED
@@ -96,7 +96,7 @@
 | NotFoundException caught | 150,000 |
 | Unexpected errors | 0 |
 | Time | 2,172.91 ms |
-| **Speed** | **69,032 exceptions/s** |
+| **Speed** | **69,813 exceptions/s** |
 
 **Status:** ✅ PASSED
 
@@ -108,7 +108,7 @@
 
 | Container | Services | Memory Limit |
 |-----------|----------|--------------|
-| **CloudCastle DI** | **1,746,358** | 1024 MB |
+| **CloudCastle DI** | **1,746,359** | 1024 MB |
 | Symfony DI | 850,000 | 1024 MB |
 | Pimple | 1,200,000 | 1024 MB |
 | Laravel | 750,000 | 1024 MB |

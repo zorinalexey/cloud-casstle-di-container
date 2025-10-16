@@ -93,7 +93,7 @@
 | Get operation | 506,073 op/s | 512,628 op/s | **+1.3%** |
 | Container load | 15 ms | 8 ms | **-47%** |
 | Memory/service | 0.46 KB | 0.38 KB | **-17%** |
-| Has operation | 304,132 op/s | 315,890 op/s | **+3.9%** |
+| Has operation | 297,817 op/s | 315,890 op/s | **+3.9%** |
 
 ### Compiled Container Benefits
 

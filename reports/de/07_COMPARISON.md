@@ -16,7 +16,7 @@
 
 | Container | Register | Get | vs CloudCastle |
 |-----------|----------|-----|----------------|
-| **CloudCastle DI** | **168.492** | **66.935** | **Basislinie** |
+| **CloudCastle DI** | **164.774** | **66.935** | **Basislinie** |
 | Symfony DI | 42.123 | 22.311 | -75% |
 | Laravel | 56.789 | 28.456 | -66% |
 
