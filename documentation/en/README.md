@@ -7,11 +7,11 @@
 
 ## 📚 Sections
 
-1. **[Quick Start](01_QUICK_START.md)** - Installation and basics
-2. **[Basic Usage](02_BASIC_USAGE.md)** - Registration, service retrieval
-3. **[Advanced Features](03_ADVANCED_FEATURES.md)** - Autowiring, Lazy, Decorators, etc.
-4. **[Compiled Container](04_COMPILED.md)** - Compilation for production
-5. **[API Reference](05_API.md)** - Complete API reference
+1. **[Quick Start](01_QUICK_START.md)** — Installation and basics
+2. **[Basic Usage](02_BASIC_USAGE.md)** — Registration, service retrieval
+3. **[Advanced Features](03_ADVANCED_FEATURES.md)** — Autowiring, Lazy, Decorators, etc.
+4. **[Compiled Container](04_COMPILED.md)** — Compilation for production
+5. **[API Reference](05_API.md)** — Complete API reference
 
 ---
 
