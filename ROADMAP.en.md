@@ -20,69 +20,63 @@ Development roadmap for CloudCastle DI Container for 2025-2026.
 
 ---
 
-## 🚀 Near-term Plans (Q4 2025)
+## 🚀 Near-term Plans (Q4 2025 - Q1 2026)
 
 ### v2.1.0 - Performance Boost
-**Planned Release:** December 2025
+**Planned Release:** March 2026
 
-- 🔥 **JIT Compilation** — Just-In-Time compilation for critical paths
 - ⚡ **Memory Pool** — object pool to reduce GC load
 - 🎯 **Smart Caching** — intelligent caching with TTL
 - 📊 **Performance Profiler** — built-in performance profiler
 - 🧪 **Advanced Benchmarks** — extended benchmarks with metrics
 
-### v2.2.0 - Enterprise Features
-**Planned Release:** January 2026
-
-- 🏢 **Enterprise Support** — commercial support
-- 📈 **Monitoring Integration** — integration with monitoring systems
-- 🔐 **Advanced Security** — advanced security features
-- 📋 **Audit Logging** — logging of all operations
-- 🎛️ **Admin Dashboard** — web interface for management
-
----
-
-## 🌟 Medium-term Plans (Q1-Q2 2026)
-
-### v3.0.0 - Next Generation
-**Planned Release:** March 2026
-
-- 🐘 **PHP 8.5 Support** — PHP 8.5 support
-- 🔄 **Reactive Programming** — reactive programming
-- 🌐 **Microservices Ready** — microservices readiness
-- 🔗 **GraphQL Integration** — GraphQL integration
-- 📱 **Mobile Support** — mobile platform support
-
-### v3.1.0 - Cloud Native
+### v2.2.0 - Stability & Bug Fixes
 **Planned Release:** June 2026
 
-- ☁️ **Cloud Integration** — cloud platform integration
-- 🐳 **Docker Support** — container optimization
-- ☸️ **Kubernetes Ready** — Kubernetes readiness
-- 🔄 **Auto-scaling** — automatic scaling
-- 📊 **Metrics & Observability** — metrics and observability
+- 🐛 **Bug Fixes** — fixing found bugs
+- 🔧 **API Improvements** — improvements to existing API
+- 📚 **Documentation Updates** — documentation updates
+- 🧪 **More Tests** — additional tests
 
 ---
 
-## 🔮 Long-term Plans (Q3-Q4 2026)
+## 🌟 Medium-term Plans (Q2-Q4 2026)
 
-### v4.0.0 - AI-Powered
+### v3.0.0 - Next Generation
 **Planned Release:** September 2026
 
-- 🤖 **AI Optimization** — AI-powered configuration optimization
-- 🔍 **Smart Dependency Analysis** — intelligent dependency analysis
-- 📈 **Predictive Performance** — predictive performance
-- 🎯 **Auto-tuning** — automatic parameter tuning
-- 🧠 **Machine Learning Integration** — ML integration
+- 🐘 **PHP 8.5 Support** — PHP 8.5 support (when released)
+- 🔧 **API Improvements** — API improvements
+- 📈 **Performance Optimizations** — additional optimizations
+- 🧪 **Extended Testing** — extended testing
 
-### v4.1.0 - Ecosystem
+### v3.1.0 - Framework Integration
 **Planned Release:** December 2026
 
-- 🔌 **Plugin System** — plugin system
-- 🎨 **Theme Support** — theme support
-- 🌍 **Global Registry** — global service registry
-- 🤝 **Community Marketplace** — community marketplace
-- 📚 **Learning Platform** — educational platform
+- 🎭 **Symfony Bundle** — official Symfony bundle
+- 🚀 **Laravel Package** — Laravel package
+- ⚡ **Slim Integration** — Slim Framework integration
+- 📚 **Framework Documentation** — integration documentation
+
+---
+
+## 🔮 Long-term Plans (2027-2028)
+
+### v4.0.0 - Advanced Features
+**Planned Release:** March 2027
+
+- 🔧 **Advanced Configuration** — advanced configuration
+- 📊 **Better Performance** — further performance improvements
+- 🛡️ **Enhanced Security** — enhanced security
+- 📚 **Comprehensive Documentation** — comprehensive documentation
+
+### v4.1.0 - Community Features
+**Planned Release:** September 2027
+
+- 🔌 **Plugin System** — plugin system (if needed)
+- 🌍 **Community Tools** — community tools
+- 📈 **Analytics** — usage analytics
+- 🤝 **Community Features** — community features
 
 ---
 

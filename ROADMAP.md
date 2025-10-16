@@ -20,69 +20,63 @@
 
 ---
 
-## 🚀 Ближайшие планы (Q4 2025)
+## 🚀 Ближайшие планы (Q4 2025 - Q1 2026)
 
 ### v2.1.0 - Performance Boost
-**Планируемый релиз:** Декабрь 2025
+**Планируемый релиз:** Март 2026
 
-- 🔥 **JIT Compilation** — Just-In-Time компиляция для критических путей
 - ⚡ **Memory Pool** — пул объектов для снижения GC нагрузки
 - 🎯 **Smart Caching** — интеллектуальное кэширование с TTL
 - 📊 **Performance Profiler** — встроенный профилировщик производительности
 - 🧪 **Advanced Benchmarks** — расширенные бенчмарки с метриками
 
-### v2.2.0 - Enterprise Features
-**Планируемый релиз:** Январь 2026
-
-- 🏢 **Enterprise Support** — коммерческая поддержка
-- 📈 **Monitoring Integration** — интеграция с системами мониторинга
-- 🔐 **Advanced Security** — расширенные функции безопасности
-- 📋 **Audit Logging** — логирование всех операций
-- 🎛️ **Admin Dashboard** — веб-интерфейс для управления
-
----
-
-## 🌟 Среднесрочные планы (Q1-Q2 2026)
-
-### v3.0.0 - Next Generation
-**Планируемый релиз:** Март 2026
-
-- 🐘 **PHP 8.5 Support** — поддержка PHP 8.5
-- 🔄 **Reactive Programming** — реактивное программирование
-- 🌐 **Microservices Ready** — готовность к микросервисам
-- 🔗 **GraphQL Integration** — интеграция с GraphQL
-- 📱 **Mobile Support** — поддержка мобильных платформ
-
-### v3.1.0 - Cloud Native
+### v2.2.0 - Stability & Bug Fixes
 **Планируемый релиз:** Июнь 2026
 
-- ☁️ **Cloud Integration** — интеграция с облачными платформами
-- 🐳 **Docker Support** — оптимизация для контейнеров
-- ☸️ **Kubernetes Ready** — готовность к Kubernetes
-- 🔄 **Auto-scaling** — автоматическое масштабирование
-- 📊 **Metrics & Observability** — метрики и наблюдаемость
+- 🐛 **Bug Fixes** — исправление найденных ошибок
+- 🔧 **API Improvements** — улучшения существующего API
+- 📚 **Documentation Updates** — обновление документации
+- 🧪 **More Tests** — дополнительные тесты
 
 ---
 
-## 🔮 Долгосрочные планы (Q3-Q4 2026)
+## 🌟 Среднесрочные планы (Q2-Q4 2026)
 
-### v4.0.0 - AI-Powered
+### v3.0.0 - Next Generation
 **Планируемый релиз:** Сентябрь 2026
 
-- 🤖 **AI Optimization** — ИИ-оптимизация конфигурации
-- 🔍 **Smart Dependency Analysis** — умный анализ зависимостей
-- 📈 **Predictive Performance** — предсказательная производительность
-- 🎯 **Auto-tuning** — автоматическая настройка параметров
-- 🧠 **Machine Learning Integration** — интеграция с ML
+- 🐘 **PHP 8.5 Support** — поддержка PHP 8.5 (когда выйдет)
+- 🔧 **API Improvements** — улучшения API
+- 📈 **Performance Optimizations** — дополнительные оптимизации
+- 🧪 **Extended Testing** — расширенное тестирование
 
-### v4.1.0 - Ecosystem
+### v3.1.0 - Framework Integration
 **Планируемый релиз:** Декабрь 2026
 
-- 🔌 **Plugin System** — система плагинов
-- 🎨 **Theme Support** — поддержка тем
-- 🌍 **Global Registry** — глобальный реестр сервисов
-- 🤝 **Community Marketplace** — маркетплейс сообщества
-- 📚 **Learning Platform** — образовательная платформа
+- 🎭 **Symfony Bundle** — официальный Symfony бандл
+- 🚀 **Laravel Package** — пакет для Laravel
+- ⚡ **Slim Integration** — интеграция с Slim Framework
+- 📚 **Framework Documentation** — документация по интеграции
+
+---
+
+## 🔮 Долгосрочные планы (2027-2028)
+
+### v4.0.0 - Advanced Features
+**Планируемый релиз:** Март 2027
+
+- 🔧 **Advanced Configuration** — расширенная конфигурация
+- 📊 **Better Performance** — дальнейшие улучшения производительности
+- 🛡️ **Enhanced Security** — улучшенная безопасность
+- 📚 **Comprehensive Documentation** — полная документация
+
+### v4.1.0 - Community Features
+**Планируемый релиз:** Сентябрь 2027
+
+- 🔌 **Plugin System** — система плагинов (если потребуется)
+- 🌍 **Community Tools** — инструменты для сообщества
+- 📈 **Analytics** — аналитика использования
+- 🤝 **Community Features** — функции для сообщества
 
 ---
 
@@ -95,10 +89,9 @@
 - 📊 **Memory Layout Optimization** — оптимизация размещения в памяти
 
 ### Developer Experience
-- 🔧 **IDE Integration** — интеграция с IDE
 - 📝 **Better Error Messages** — улучшенные сообщения об ошибках
-- 🎨 **Syntax Highlighting** — подсветка синтаксиса
-- 📖 **Interactive Documentation** — интерактивная документация
+- 📖 **Better Documentation** — улучшенная документация
+- 🔧 **IDE Support** — поддержка IDE (базовая)
 
 ### Testing & Quality
 - 🧪 **Mutation Testing** — мутационное тестирование
@@ -117,10 +110,9 @@
 - 🎯 **Custom Framework** — собственный микрофреймворк
 
 ### Tools & Utilities
-- 🔧 **CLI Tool** — командная строка для управления
+- 🔧 **CLI Tool** — командная строка для управления (если потребуется)
 - 📊 **Performance Analyzer** — анализатор производительности
-- 🎨 **Visual Configuration** — визуальная конфигурация
-- 📱 **Mobile App** — мобильное приложение для мониторинга
+- 📚 **Documentation Generator** — генератор документации
 
 ---
 

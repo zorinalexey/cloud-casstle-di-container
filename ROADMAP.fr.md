@@ -20,69 +20,63 @@ Feuille de route de développement pour CloudCastle DI Container pour 2025-2026.
 
 ---
 
-## 🚀 Plans à Court Terme (Q4 2025)
+## 🚀 Plans à Court Terme (Q4 2025 - Q1 2026)
 
 ### v2.1.0 - Performance Boost
-**Sortie Prévue:** Décembre 2025
+**Sortie Prévue:** Mars 2026
 
-- 🔥 **Compilation JIT** — compilation Just-In-Time pour les chemins critiques
 - ⚡ **Pool Mémoire** — pool d'objets pour réduire la charge GC
 - 🎯 **Cache Intelligent** — cache intelligent avec TTL
 - 📊 **Profileur Performance** — profileur de performance intégré
 - 🧪 **Benchmarks Avancés** — benchmarks étendus avec métriques
 
-### v2.2.0 - Fonctionnalités Entreprise
-**Sortie Prévue:** Janvier 2026
-
-- 🏢 **Support Entreprise** — support commercial
-- 📈 **Intégration Monitoring** — intégration avec systèmes de monitoring
-- 🔐 **Sécurité Avancée** — fonctionnalités de sécurité avancées
-- 📋 **Audit Logging** — journalisation de toutes les opérations
-- 🎛️ **Tableau de Bord Admin** — interface web pour gestion
-
----
-
-## 🌟 Plans à Moyen Terme (Q1-Q2 2026)
-
-### v3.0.0 - Prochaine Génération
-**Sortie Prévue:** Mars 2026
-
-- 🐘 **Support PHP 8.5** — support PHP 8.5
-- 🔄 **Programmation Réactive** — programmation réactive
-- 🌐 **Prêt Microservices** — préparation microservices
-- 🔗 **Intégration GraphQL** — intégration GraphQL
-- 📱 **Support Mobile** — support plateforme mobile
-
-### v3.1.0 - Cloud Native
+### v2.2.0 - Stabilité & Corrections
 **Sortie Prévue:** Juin 2026
 
-- ☁️ **Intégration Cloud** — intégration plateforme cloud
-- 🐳 **Support Docker** — optimisation conteneurs
-- ☸️ **Prêt Kubernetes** — préparation Kubernetes
-- 🔄 **Auto-scaling** — mise à l'échelle automatique
-- 📊 **Métriques & Observabilité** — métriques et observabilité
+- 🐛 **Corrections de Bugs** — correction des bugs trouvés
+- 🔧 **Améliorations API** — améliorations de l'API existante
+- 📚 **Mises à Jour Documentation** — mises à jour de la documentation
+- 🧪 **Plus de Tests** — tests supplémentaires
 
 ---
 
-## 🔮 Plans à Long Terme (Q3-Q4 2026)
+## 🌟 Plans à Moyen Terme (Q2-Q4 2026)
 
-### v4.0.0 - Alimenté par IA
+### v3.0.0 - Prochaine Génération
 **Sortie Prévue:** Septembre 2026
 
-- 🤖 **Optimisation IA** — optimisation configuration alimentée par IA
-- 🔍 **Analyse Intelligente Dépendances** — analyse intelligente des dépendances
-- 📈 **Performance Prédictive** — performance prédictive
-- 🎯 **Auto-tuning** — réglage automatique des paramètres
-- 🧠 **Intégration Machine Learning** — intégration ML
+- 🐘 **Support PHP 8.5** — support PHP 8.5 (quand publié)
+- 🔧 **Améliorations API** — améliorations de l'API
+- 📈 **Optimisations Performance** — optimisations supplémentaires
+- 🧪 **Tests Étendus** — tests étendus
 
-### v4.1.0 - Écosystème
+### v3.1.0 - Intégration Frameworks
 **Sortie Prévue:** Décembre 2026
 
-- 🔌 **Système Plugin** — système de plugins
-- 🎨 **Support Thèmes** — support des thèmes
-- 🌍 **Registry Global** — registry global des services
-- 🤝 **Marketplace Communauté** — marketplace communautaire
-- 📚 **Plateforme Apprentissage** — plateforme éducative
+- 🎭 **Bundle Symfony** — bundle Symfony officiel
+- 🚀 **Package Laravel** — package Laravel
+- ⚡ **Intégration Slim** — intégration Slim Framework
+- 📚 **Documentation Frameworks** — documentation d'intégration
+
+---
+
+## 🔮 Plans à Long Terme (2027-2028)
+
+### v4.0.0 - Fonctionnalités Avancées
+**Sortie Prévue:** Mars 2027
+
+- 🔧 **Configuration Avancée** — configuration avancée
+- 📊 **Meilleure Performance** — améliorations de performance supplémentaires
+- 🛡️ **Sécurité Renforcée** — sécurité renforcée
+- 📚 **Documentation Complète** — documentation complète
+
+### v4.1.0 - Fonctionnalités Communauté
+**Sortie Prévue:** Septembre 2027
+
+- 🔌 **Système Plugin** — système de plugins (si nécessaire)
+- 🌍 **Outils Communauté** — outils communautaires
+- 📈 **Analytiques** — analytiques d'utilisation
+- 🤝 **Fonctionnalités Communauté** — fonctionnalités communautaires
 
 ---
 
