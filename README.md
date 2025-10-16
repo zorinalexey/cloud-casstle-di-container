@@ -203,20 +203,28 @@ composer test
 composer test:coverage
 ```
 
-#### Metrics & Documentation
+#### Performance Testing
+
+```bash
+# Run benchmarks
+composer benchmark
+
+# Run load tests (2M operations)
+composer load-test
+
+# Run stress tests (15M operations)
+composer stress-test
+
+# Compiled container tests
+composer compiled-load-test
+composer compiled-stress-test
+```
+
+#### Metrics
 
 ```bash
 # Generate code metrics
 composer metrics
-
-# Run benchmarks
-composer benchmark
-
-# Run load tests
-composer load-test
-
-# Run stress tests
-composer stress-test
 ```
 
 #### Quick Commands
