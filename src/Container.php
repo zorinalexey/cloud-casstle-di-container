@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace CloudCastle\DI;
 
+use CloudCastle\DI\Attribute\Inject;
+use CloudCastle\DI\Attribute\Service;
+use CloudCastle\DI\Attribute\Tag;
 use CloudCastle\DI\Exception\ContainerException;
 use CloudCastle\DI\Exception\NotFoundException;
 use Psr\Container\ContainerInterface;
@@ -11,10 +14,11 @@ use Psr\Container\ContainerInterface;
 /**
  * Dependency Injection Container.
  *
- * Manages service definitions and their instantiation.
+ * Manages service definitions and their instantiation with advanced features.
  */
 final class Container implements ContainerInterface
 {
+    use ContainerExtensions;
     /**
      * @var array<string, callable(self): object|object>
      */
@@ -49,6 +53,39 @@ final class Container implements ContainerInterface
      * @var array<string, array<string, mixed>> Service tag attributes (serviceId => [tag => attributes])
      */
     private array $tagAttributes = [];
+
+    /**
+     * @var \WeakMap<object, bool> Lazy proxy initialization tracking
+     */
+    private \WeakMap $lazyProxies;
+
+    /**
+     * @var array<string, string> Scoped services (serviceId => scope)
+     */
+    private array $scopedServices = [];
+
+    /**
+     * @var string|null Current scope
+     */
+    private ?string $currentScope = null;
+
+    /**
+     * @var array<string, array<string, object>> Scoped instances (scope => [serviceId => instance])
+     */
+    private array $scopedInstances = [];
+
+    /**
+     * @var array<int, ContainerInterface> Delegated containers
+     */
+    private array $delegates = [];
+
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        $this->lazyProxies = new \WeakMap();
+    }
 
     /**
      * Register a service in the container.
@@ -109,6 +146,8 @@ final class Container implements ContainerInterface
     /**
      * Apply all registered decorators to an instance.
      *
+     * Decorators are sorted by priority (lower priority applied first).
+     *
      * @param string $serviceId Service identifier
      * @param object $instance Original instance
      * @return object Decorated instance
@@ -119,7 +158,17 @@ final class Container implements ContainerInterface
             return $instance;
         }
 
-        foreach ($this->decorators[$serviceId] as $decorator) {
+        // Sort decorators by priority (lower first)
+        $decorators = $this->decorators[$serviceId];
+        usort($decorators, function ($a, $b) {
+            $priorityA = is_array($a) ? $a['priority'] : 0;
+            $priorityB = is_array($b) ? $b['priority'] : 0;
+            return $priorityA <=> $priorityB;
+        });
+
+        foreach ($decorators as $decoratorData) {
+            // Support both old (callable) and new (array with priority) format
+            $decorator = is_array($decoratorData) ? $decoratorData['decorator'] : $decoratorData;
             $instance = $decorator($instance, $this);
 
             if (!is_object($instance)) {
@@ -135,13 +184,37 @@ final class Container implements ContainerInterface
      */
     public function get(string $serviceId): mixed
     {
-        // Return cached instance if exists
-        if (isset($this->instances[$serviceId])) {
+        // Check for scoped services
+        if (isset($this->scopedServices[$serviceId])) {
+            $scope = $this->scopedServices[$serviceId];
+
+            if ($this->currentScope !== $scope) {
+                throw new ContainerException(
+                    sprintf("Service '%s' requires scope '%s', current is '%s'", $serviceId, $scope, $this->currentScope ?? 'none')
+                );
+            }
+
+            // Return scoped instance if exists
+            if (isset($this->scopedInstances[$scope][$serviceId])) {
+                return $this->scopedInstances[$scope][$serviceId];
+            }
+        }
+
+        // Return cached instance if exists (for non-scoped services)
+        if (!isset($this->scopedServices[$serviceId]) && isset($this->instances[$serviceId])) {
             return $this->instances[$serviceId];
         }
 
         // Check if service is registered
         if (!$this->has($serviceId)) {
+            // Try delegates first
+            if (!empty($this->delegates)) {
+                $delegatedService = $this->getFromDelegates($serviceId);
+                if ($delegatedService !== null) {
+                    return $delegatedService;
+                }
+            }
+
             // Try autowiring if enabled
             if ($this->autowiring && class_exists($serviceId)) {
                 return $this->autowire($serviceId);
@@ -165,8 +238,12 @@ final class Container implements ContainerInterface
             // Apply decorators if any
             $instance = $this->applyDecorators($serviceId, $instance);
 
-            // Cache the instance
-            $this->instances[$serviceId] = $instance;
+            // Cache the instance (scoped or singleton)
+            if (isset($this->scopedServices[$serviceId]) && $this->currentScope !== null) {
+                $this->scopedInstances[$this->currentScope][$serviceId] = $instance;
+            } else {
+                $this->instances[$serviceId] = $instance;
+            }
 
             return $instance;
         } catch (\Throwable $throwable) {
@@ -229,8 +306,15 @@ final class Container implements ContainerInterface
         // Generate factory methods
         $factoryMethods = $this->generateFactoryMethods($serviceIds);
 
+        // Generate tag methods
+        $tagMethods = $this->generateTagMethods();
+
         // Serialize services array for embedding
         $servicesCode = $this->serializeServices();
+
+        // Serialize tags
+        $tagsCode = var_export($this->tags, true);
+        $tagAttributesCode = var_export($this->tagAttributes, true);
 
         return <<<PHP
 <?php
@@ -247,9 +331,20 @@ use CloudCastle\DI\Exception\NotFoundException;
  * 
  * Generated at: {$this->getCurrentDateTime()}
  * Services: {$this->formatNumber(count($serviceIds))}
+ * Tags: {$this->formatNumber(count($this->tags))}
  */
 final class {$className} extends \CloudCastle\DI\CompiledContainer
 {
+    /**
+     * @var array<string, array<int, string>> Service tags
+     */
+    private array \$tags = {$tagsCode};
+
+    /**
+     * @var array<string, array<string, mixed>> Tag attributes
+     */
+    private array \$tagAttributes = {$tagAttributesCode};
+
     public function __construct()
     {
         parent::__construct({$servicesCode});
@@ -260,6 +355,8 @@ final class {$className} extends \CloudCastle\DI\CompiledContainer
 {$getMethod}
 
 {$getIdsMethod}
+
+{$tagMethods}
 {$factoryMethods}
 }
 
@@ -418,6 +515,65 @@ METHOD;
         }
 
         return "\n" . implode("\n", $methods);
+    }
+
+    /**
+     * Generate tag methods for compiled container.
+     */
+    private function generateTagMethods(): string
+    {
+        return <<<'PHP'
+
+    /**
+     * Find services by tag.
+     *
+     * @param string $tag Tag name
+     * @return array<int, string> Service IDs
+     */
+    public function findTaggedServiceIds(string $tag): array
+    {
+        return $this->tags[$tag] ?? [];
+    }
+
+    /**
+     * Get all tags for a service.
+     *
+     * @param string $serviceId Service identifier
+     * @return array<int, string> Tag names
+     */
+    public function getServiceTags(string $serviceId): array
+    {
+        $tags = [];
+        foreach ($this->tags as $tagName => $serviceIds) {
+            if (in_array($serviceId, $serviceIds, true)) {
+                $tags[] = $tagName;
+            }
+        }
+        return $tags;
+    }
+
+    /**
+     * Get all tags.
+     *
+     * @return array<string, array<int, string>> All tags
+     */
+    public function getAllTags(): array
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Get tag attributes.
+     *
+     * @param string $serviceId Service identifier
+     * @param string $tag Tag name
+     * @return array<string, mixed> Tag attributes
+     */
+    public function getTagAttributes(string $serviceId, string $tag): array
+    {
+        return $this->tagAttributes[$serviceId][$tag] ?? [];
+    }
+PHP;
     }
 
     /**
@@ -655,6 +811,15 @@ METHOD;
             $dependencies = [];
 
             foreach ($parameters as $parameter) {
+                // Check for #[Inject] attribute first (PHP 8+)
+                $injectAttrs = $parameter->getAttributes(Inject::class);
+                if (!empty($injectAttrs)) {
+                    /** @var Inject $inject */
+                    $inject = $injectAttrs[0]->newInstance();
+                    $dependencies[] = $this->get($inject->serviceId);
+                    continue;
+                }
+
                 $type = $parameter->getType();
 
                 // Handle union types and null

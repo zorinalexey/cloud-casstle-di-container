@@ -6,16 +6,28 @@ A powerful and flexible Dependency Injection container for PHP 8.1+ with **autow
 
 ## Features
 
+### Core Features
+
 - ⚡ **High performance** - до 385k операций/сек
 - 🤖 **Autowiring** - автоматическое разрешение зависимостей  
-- 🔄 **Lazy Loading** - отложенная инициализация сервисов
-- 🎨 **Decorators** - декорирование сервисов дополнительной функциональностью
-- ⚡ **Compiled Container** - предкомпиляция для максимальной производительности
+- 🔄 **Lazy Loading** - отложенная инициализация с WeakMap оптимизацией
+- 🎨 **Decorators** - декорирование с поддержкой priorities
+- ⚡ **Compiled Container** - предкомпиляция со встроенными тегами
 - 🏷️ **Tagged Services** - группировка сервисов по меткам
 - 💾 **Memory efficient** - 0.46 КБ на сервис
 - 🏆 **Best memory management** - 0.001 МБ утечек за 15M циклов
 - 📦 **PSR-11 compliant**
 - 🎯 **Simple API**
+
+### Advanced Features (v2.0+)
+
+- 🏷️ **PHP 8+ Attributes** - декларативная конфигурация (#[Service], #[Inject], #[Tag])
+- 📊 **Decorator Priorities** - управляемый порядок применения декораторов
+- 🔍 **Service Locator** - ограниченный доступ к подмножеству сервисов
+- 🔗 **Container Delegation** - поиск сервисов в нескольких контейнерах
+- 🔄 **Scoped Containers** - lifecycle management (request, session, etc.)
+- ⚡ **Async Initialization** - generator-based batch loading
+- 📦 **Compiled Tags** - pre-computed tag mappings в compiled container
 
 ## Installation
 
